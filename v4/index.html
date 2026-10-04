@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KronosTime — концепт главной, версия 4</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/site/mark.svg">
+<link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-banner="a" data-bsize="m">
+<a class="skip" href="#main">К содержимому</a>
+
+<div class="tb">
+  <div class="wrap tb__row">
+    <button class="tb__city" type="button"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>Москва<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button>
+    <nav class="tb__links" aria-label="Покупателям">
+      <a href="#stores">Наши магазины</a><a href="#" data-to="рассрочка">Рассрочка</a><a href="#" data-to="гарантия">Гарантия</a><a href="#" data-to="доставка">Доставка</a><a href="#" data-to="статус заказа">Статус заказа</a>
+    </nav>
+    <div class="tb__right">
+      <a href="#" data-to="звонок">+7 (495) 128-09-32</a><a href="#" data-to="звонок">+7 (800) 511-94-55</a>
+      <a class="tb__ico" href="#" data-to="чат в MAX" aria-label="Написать в MAX"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.1-1.1A8 8 0 1 0 12 4z"/></svg></a><a class="tb__ico" href="#" data-to="чат в Telegram" aria-label="Написать в Telegram"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 4.5 3.5 11l5.5 2 2 6 3-4 4.5 3.5z"/><path d="m9 13 8-6"/></svg></a>
+    </div>
+  </div>
+</div>
+<header class="hd" id="top">
+  <div class="wrap hd__row">
+    <button class="hd__burger" type="button" aria-label="Меню" data-mega="m-catalog"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+    <a class="hd__logo" href="#" data-to="главная"><img src="../assets/site/logo.svg" alt="KronosTime" width="185" height="30"></a>
+    <form class="sr" role="search" onsubmit="return false">
+      <label class="sr__field"><span class="sr-only">Поиск по каталогу</span><input type="search" placeholder="Бренд, модель или артикул" autocomplete="off"><button type="submit" aria-label="Найти"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></button></label>
+      <div class="sr__drop">
+        <div><p class="sr__h">Часто ищут</p><ul class="sr__q"><li><a href="#" data-to="поиск">Tissot PRX</a></li><li><a href="#" data-to="поиск">Casio G-Shock</a></li><li><a href="#" data-to="поиск">Seiko 5 Sports</a></li><li><a href="#" data-to="поиск">Мужские механические</a></li><li><a href="#" data-to="поиск">Часы с бриллиантами</a></li></ul></div>
+        <div><p class="sr__h">Бренды</p><div class="sr__brands"><a href="#" data-to="бренд Tissot"><img src="../assets/logo/tissot.png" alt="Tissot" loading="lazy"></a><a href="#" data-to="бренд Casio"><img src="../assets/logo/casio.png" alt="Casio" loading="lazy"></a><a href="#" data-to="бренд Longines"><img src="../assets/logo/longines.png" alt="Longines" loading="lazy"></a><a href="#" data-to="бренд Orient"><img src="../assets/logo/orient.png" alt="Orient" loading="lazy"></a><a href="#" data-to="бренд Rado"><img src="../assets/logo/rado.png" alt="Rado" loading="lazy"></a><a href="#" data-to="бренд Hamilton"><img src="../assets/logo/hamilton.png" alt="Hamilton" loading="lazy"></a><a href="#" data-to="бренд Certina"><img src="../assets/logo/certina.png" alt="Certina" loading="lazy"></a><a href="#" data-to="бренд Mido"><img src="../assets/logo/mido.png" alt="Mido" loading="lazy"></a></div></div>
+      </div>
+    </form>
+    <div class="hd__act">
+      <a class="ha" href="#" data-to="сравнение" aria-label="Сравнение"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 20v-5M10 20v-9M15 20v-6M20 20V6"/></svg><span class="ha__t">Сравнение</span></a>
+      <a class="ha" href="#" data-to="избранное" aria-label="Избранное"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg><b class="ha__n" data-fav hidden>0</b><span class="ha__t">Избранное</span></a>
+      <a class="ha ha--user" href="#" data-to="вход" aria-label="Войти"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="ha__t">Войти</span></a>
+      <a class="ha" href="#" data-to="корзина" aria-label="Корзина"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><b class="ha__n" data-cart hidden>0</b><span class="ha__t">Корзина</span></a>
+    </div>
+  </div>
+  <nav class="nv" aria-label="Каталог">
+    <ul class="wrap nv__list">
+      <li><button class="nv__a is-red" type="button" aria-expanded="false" aria-controls="m-catalog" data-mega="m-catalog">Каталог часов<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></li>
+      <li><button class="nv__a" type="button" aria-expanded="false" aria-controls="m-lux" data-mega="m-lux">Часы люкс<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></li>
+      <li><button class="nv__a" type="button" aria-expanded="false" aria-controls="m-brands" data-mega="m-brands">Бренды<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></li>
+      <li><a class="nv__a" href="#new">Новинки</a></li>
+      <li><a class="nv__a is-red" href="#" data-to="распродажа">Распродажа</a></li>
+    </ul>
+    <div class="mg" id="m-catalog" hidden><div class="wrap mg__in mg__in--cat"><div class="mg__col"><p class="mg__h">Для кого</p><ul><li><a href="#" data-to="раздел «Мужские часы»">Мужские часы</a></li><li><a href="#" data-to="раздел «Женские часы»">Женские часы</a></li></ul></div><div class="mg__col"><p class="mg__h">Механизм</p><ul><li><a href="#" data-to="раздел «Механические»">Механические</a></li><li><a href="#" data-to="раздел «Кварцевые»">Кварцевые</a></li><li><a href="#" data-to="раздел «Электронные»">Электронные</a></li></ul></div><div class="mg__col"><p class="mg__h">Страна</p><ul><li><a href="#" data-to="раздел «Швейцарские»">Швейцарские</a></li><li><a href="#" data-to="раздел «Японские»">Японские</a></li><li><a href="#" data-to="раздел «Российские»">Российские</a></li><li><a href="#" data-to="раздел «Немецкие»">Немецкие</a></li><li><a href="#" data-to="раздел «Американские»">Американские</a></li><li><a href="#" data-to="раздел «Австрийские»">Австрийские</a></li><li><a href="#" data-to="раздел «Итальянские»">Итальянские</a></li></ul></div><div class="mg__col"><p class="mg__h">Материал корпуса</p><ul><li><a href="#" data-to="раздел «Стальные»">Стальные</a></li><li><a href="#" data-to="раздел «Золотые»">Золотые</a></li><li><a href="#" data-to="раздел «Керамические»">Керамические</a></li><li><a href="#" data-to="раздел «Титановые»">Титановые</a></li><li><a href="#" data-to="раздел «Карбоновые»">Карбоновые</a></li></ul></div><div class="mg__col"><p class="mg__h">Особенности</p><ul><li><a href="#" data-to="раздел «Противоударные»">Противоударные</a></li><li><a href="#" data-to="раздел «Водонепроницаемые»">Водонепроницаемые</a></li><li><a href="#" data-to="раздел «С бриллиантами»">С бриллиантами</a></li><li><a href="#" data-to="раздел «Карманные»">Карманные</a></li><li><a href="#" data-to="раздел «Скелетоны»">Скелетоны</a></li><li><a href="#" data-to="раздел «С автоподзаводом»">С автоподзаводом</a></li><li><a href="#" data-to="раздел «С сапфировым стеклом»">С сапфировым стеклом</a></li></ul></div><div class="mg__col"><p class="mg__h">Стиль</p><ul><li><a href="#" data-to="раздел «Классические»">Классические</a></li><li><a href="#" data-to="раздел «Спортивные»">Спортивные</a></li><li><a href="#" data-to="раздел «Военные»">Военные</a></li><li><a href="#" data-to="раздел «Ретро»">Ретро</a></li></ul></div><div class="mg__col"><p class="mg__h">Популярные бренды</p><ul><li><a href="#" data-to="раздел «Tissot»">Tissot</a></li><li><a href="#" data-to="раздел «Certina»">Certina</a></li><li><a href="#" data-to="раздел «Casio»">Casio</a></li><li><a href="#" data-to="раздел «Seiko»">Seiko</a></li><li><a href="#" data-to="раздел «Orient»">Orient</a></li><li><a href="#" data-to="раздел «Rado»">Rado</a></li><li><a href="#" data-to="раздел «Longines»">Longines</a></li><li><a href="#" data-to="раздел «Hamilton»">Hamilton</a></li><li><a href="#" data-to="раздел «Mido»">Mido</a></li><li><a href="#" data-to="раздел «Zeppelin»">Zeppelin</a></li><li><a href="#" data-to="раздел «Swatch»">Swatch</a></li><li><a href="#" data-to="раздел «Citizen»">Citizen</a></li></ul></div></div></div>
+    <div class="mg" id="m-lux" hidden><div class="wrap mg__in mg__in--lux"><div class="mg__col"><p class="mg__h">Часы люкс</p><ul><li><a href="#" data-to="раздел «Мужские»">Мужские</a></li><li><a href="#" data-to="раздел «Женские»">Женские</a></li><li><a href="#" data-to="раздел «Все часы люкс»">Все часы люкс</a></li></ul></div><div class="mg__col"><p class="mg__h">Популярные бренды</p><ul><li><a href="#" data-to="раздел «Breitling»">Breitling</a></li><li><a href="#" data-to="раздел «Frederique Constant»">Frederique Constant</a></li><li><a href="#" data-to="раздел «Longines»">Longines</a></li><li><a href="#" data-to="раздел «Maurice Lacroix»">Maurice Lacroix</a></li><li><a href="#" data-to="раздел «Mido»">Mido</a></li><li><a href="#" data-to="раздел «Omega»">Omega</a></li><li><a href="#" data-to="раздел «Oris»">Oris</a></li><li><a href="#" data-to="раздел «Rado»">Rado</a></li><li><a href="#" data-to="раздел «Raymond Weil»">Raymond Weil</a></li><li><a href="#" data-to="раздел «TAG Heuer»">TAG Heuer</a></li></ul></div>
+      <a class="mg__promo" href="#" data-to="часы люкс"><img src="../assets/pb/87327.jpg" alt="" loading="lazy"><span><b>Longines Master Collection</b>495 800 ₽</span></a></div></div>
+    <div class="mg" id="m-brands" hidden><div class="wrap mg__in mg__in--brands"><div><p class="mg__h">Бренды от A до Z</p><div class="mg__letters"><a href="#" data-to="бренды на A">A</a><a href="#" data-to="бренды на B">B</a><a href="#" data-to="бренды на C">C</a><a href="#" data-to="бренды на D">D</a><a href="#" data-to="бренды на E">E</a><a href="#" data-to="бренды на F">F</a><a href="#" data-to="бренды на G">G</a><a href="#" data-to="бренды на H">H</a><a href="#" data-to="бренды на I">I</a><a href="#" data-to="бренды на J">J</a><a href="#" data-to="бренды на K">K</a><a href="#" data-to="бренды на L">L</a><a href="#" data-to="бренды на M">M</a><a href="#" data-to="бренды на O">O</a><a href="#" data-to="бренды на P">P</a><a href="#" data-to="бренды на Q">Q</a><a href="#" data-to="бренды на R">R</a><a href="#" data-to="бренды на S">S</a><a href="#" data-to="бренды на T">T</a><a href="#" data-to="бренды на U">U</a><a href="#" data-to="бренды на V">V</a><a href="#" data-to="бренды на W">W</a><a href="#" data-to="бренды на Z">Z</a></div><a class="lnk" href="#" data-to="все бренды">Все бренды<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div><div class="mg__logos"><a href="#" data-to="бренд Tissot"><img src="../assets/logo/tissot.png" alt="Tissot" loading="lazy"></a><a href="#" data-to="бренд Casio"><img src="../assets/logo/casio.png" alt="Casio" loading="lazy"></a><a href="#" data-to="бренд Longines"><img src="../assets/logo/longines.png" alt="Longines" loading="lazy"></a><a href="#" data-to="бренд Orient"><img src="../assets/logo/orient.png" alt="Orient" loading="lazy"></a><a href="#" data-to="бренд Rado"><img src="../assets/logo/rado.png" alt="Rado" loading="lazy"></a><a href="#" data-to="бренд Hamilton"><img src="../assets/logo/hamilton.png" alt="Hamilton" loading="lazy"></a><a href="#" data-to="бренд Certina"><img src="../assets/logo/certina.png" alt="Certina" loading="lazy"></a><a href="#" data-to="бренд Mido"><img src="../assets/logo/mido.png" alt="Mido" loading="lazy"></a><a href="#" data-to="бренд Omega"><img src="../assets/logo/omega.png" alt="Omega" loading="lazy"></a><a href="#" data-to="бренд TAG Heuer"><img src="../assets/logo/tagheuer.png" alt="TAG Heuer" loading="lazy"></a><a href="#" data-to="бренд Oris"><img src="../assets/logo/oris.png" alt="Oris" loading="lazy"></a><a href="#" data-to="бренд Breitling"><img src="../assets/logo/breitling.png" alt="Breitling" loading="lazy"></a></div></div></div>
+  </nav>
+</header>
+<main id="main">
+
+<section class="bn" id="banner" aria-roledescription="карусель" aria-label="Баннеры">
+  <div class="wrap bn__in">
+    <div class="bn__stage" tabindex="-1">
+      <a class="bs bs--split bs--dark is-on" href="#" data-to="Gentleman Powermatic 80 Silicium" style="--bs-bg:#050505" aria-hidden="false" tabindex="0">
+  <picture><source media="(max-width: 767px)" srcset="../assets/life/16_watches-3.jpg"><img src="../assets/life/16_watches-3.jpg" alt="Tissot Gentleman Powermatic 80 Silicium" fetchpriority="high" decoding="async"></picture><span class="bs__cap"><span class="bs__k">Tissot</span><span class="bs__t">Gentleman Powermatic 80 Silicium</span><span class="bs__s">Швейцарский автоподзавод с запасом хода до 80 часов</span><span class="bs__btn">Смотреть модель<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span>
+</a><a class="bs bs--art" href="#" data-to="Ventura" data-desk-only aria-hidden="true" tabindex="-1">
+  <picture><img src="../v4/img/Hamilton_Ventura.jpg" alt="Hamilton Ventura" loading="lazy" decoding="async"></picture>
+</a><a class="bs bs--split bs--light" href="#" data-to="DS Action Diver" style="--bs-bg:#eef0f3" aria-hidden="true" tabindex="-1">
+  <picture><source media="(max-width: 767px)" srcset="../assets/life/06_watches_3.jpg"><img src="../assets/life/06_watches_3.jpg" alt="Certina DS Action Diver на снегу" loading="lazy" decoding="async"></picture><span class="bs__cap"><span class="bs__k">Certina</span><span class="bs__t">DS Action Diver</span><span class="bs__s">Дайверские часы с калибром Powermatic 80</span><span class="bs__btn">Смотреть модель<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span>
+</a><a class="bs bs--art bs--top" href="#" data-to="HyperChrome Chronograph" data-desk-only aria-hidden="true" tabindex="-1">
+  <picture><img src="../v4/img/Rado_Hyperchrome_Chronograph.jpg" alt="Rado HyperChrome Chronograph" loading="lazy" decoding="async"></picture>
+</a><a class="bs bs--cover bs--dark" href="#" data-to="Часы Longines" aria-hidden="true" tabindex="-1">
+  <picture><source media="(max-width: 767px)" srcset="../assets/life/00_Longines_header.jpg"><img src="../assets/life/00_Longines_header.jpg" alt="Три часов Longines на камнях у моря" loading="lazy" decoding="async"></picture><span class="bs__cap"><span class="bs__k">Longines</span><span class="bs__t">Часы Longines</span><span class="bs__s">Классика и спорт швейцарской марки с 1832 года</span><span class="bs__btn">Смотреть Longines<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span>
+</a>
+      <button class="bn__arr bn__arr--l" type="button" aria-label="Предыдущий баннер"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="bn__arr bn__arr--r" type="button" aria-label="Следующий баннер"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></button>
+      <div class="bn__dots"><button class="bn__dot is-on" type="button" aria-label="Баннер 1: Gentleman Powermatic 80 Silicium"><i></i></button><button class="bn__dot" type="button" aria-label="Баннер 2: Ventura" data-desk-only><i></i></button><button class="bn__dot" type="button" aria-label="Баннер 3: DS Action Diver"><i></i></button><button class="bn__dot" type="button" aria-label="Баннер 4: HyperChrome Chronograph" data-desk-only><i></i></button><button class="bn__dot" type="button" aria-label="Баннер 5: Часы Longines"><i></i></button></div>
+    </div>
+    <ol class="bn__agenda" aria-label="Все баннеры"><li><button class="ag is-on" type="button" data-i="0"><img src="../assets/life/16_watches-3.jpg" alt="" loading="lazy"><span><small>Tissot</small>Gentleman Powermatic 80 Silicium</span><i></i></button></li><li><button class="ag" type="button" data-i="1"><img src="../v4/img/Hamilton_Ventura_2.jpg" alt="" loading="lazy"><span><small>Hamilton</small>Ventura</span><i></i></button></li><li><button class="ag" type="button" data-i="2"><img src="../assets/life/06_watches_3.jpg" alt="" loading="lazy"><span><small>Certina</small>DS Action Diver</span><i></i></button></li><li><button class="ag" type="button" data-i="3"><img src="../v4/img/Rado_Hyperchrome_Chronograph_2.jpg" alt="" loading="lazy"><span><small>Rado</small>HyperChrome Chronograph</span><i></i></button></li><li><button class="ag" type="button" data-i="4"><img src="../assets/life/00_Longines_header.jpg" alt="" loading="lazy"><span><small>Longines</small>Часы Longines</span><i></i></button></li></ol>
+    <aside class="bn__side" aria-label="Хит продаж">
+      <span class="bn__side-k">Хит продаж</span>
+      <a class="bn__side-img" href="#" data-to="карточка Tissot PRX Powermatic 80 T137.407.11.351.00"><img src="../assets/pb/80810.jpg" alt="Tissot PRX Powermatic 80 T137.407.11.351.00" loading="lazy"></a>
+      <a class="pc__name" href="#" data-to="карточка Tissot PRX Powermatic 80 T137.407.11.351.00">Tissot <span>PRX Powermatic 80</span></a>
+      <span class="pc__ref">T137.407.11.351.00</span>
+      <div class="pc__buy"><div class="pc__price"><span class="pc__was"><s>103 700 ₽</s><em>−25%</em></span><b>77 600 ₽</b></div><button class="pc__cart" type="button" aria-label="В корзину: Tissot PRX Powermatic 80 T137.407.11.351.00"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button></div>
+    </aside>
+  </div>
+</section>
+<section class="facts" aria-label="KronosTime в цифрах"><ul class="wrap facts__list"><li><a href="#" data-to="о компании"><b>с 2008</b><span>года продаём часы</span></a></li><li><a href="#" data-to="все бренды"><b>100+</b><span>мировых брендов</span></a></li><li><a href="#" data-to="каталог"><b>45 000+</b><span>моделей в каталоге</span></a></li><li><a href="#" data-to="магазины"><b>10</b><span>магазинов KronosTime</span></a></li><li><a href="#" data-to="отзывы"><b>4,9</b><span>на Яндексе, 2000+ отзывов</span></a></li></ul></section>
+
+<section class="sec sec--tight cxs" aria-labelledby="cx-h">
+  <div class="wrap">
+    <div class="cxs__head"><h2 class="cxs__h" id="cx-h">Каталог часов</h2><a class="lnk" href="#" data-to="каталог">Весь каталог<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+    <ul class="cxs__list"><li><a class="cx" href="#" data-to="раздел «Мужские часы»"><span class="cx__img"><img src="../assets/pb/38610.jpg" alt="" loading="lazy"></span><span class="cx__t">Мужские часы</span></a></li><li><a class="cx" href="#" data-to="раздел «Женские часы»"><span class="cx__img"><img src="../assets/pb/81343.jpg" alt="" loading="lazy"></span><span class="cx__t">Женские часы</span></a></li><li><a class="cx" href="#" data-to="раздел «Механические»"><span class="cx__img"><img src="../assets/pb/70818.jpg" alt="" loading="lazy"></span><span class="cx__t">Механические</span></a></li><li><a class="cx" href="#" data-to="раздел «Хронографы»"><span class="cx__img"><img src="../assets/pb/45920.jpg" alt="" loading="lazy"></span><span class="cx__t">Хронографы</span></a></li><li><a class="cx" href="#" data-to="раздел «Дайверские»"><span class="cx__img"><img src="../assets/pb/74524.jpg" alt="" loading="lazy"></span><span class="cx__t">Дайверские</span></a></li><li><a class="cx" href="#" data-to="раздел «Классические»"><span class="cx__img"><img src="../assets/pb/37652.jpg" alt="" loading="lazy"></span><span class="cx__t">Классические</span></a></li><li><a class="cx" href="#" data-to="раздел «Электронные»"><span class="cx__img"><img src="../assets/pb/106276.jpg" alt="" loading="lazy"></span><span class="cx__t">Электронные</span></a></li><li><a class="cx" href="#" data-to="раздел «Часы люкс»"><span class="cx__img"><img src="../assets/pb/87327.jpg" alt="" loading="lazy"></span><span class="cx__t">Часы люкс</span></a></li></ul>
+  </div>
+</section>
+
+<section class="sec hits" aria-labelledby="hits-h">
+  <div class="wrap">
+    <div class="sec__head rv"><div><h2 class="h2" id="hits-h">Хиты продаж</h2><p class="lede">Модели, которые чаще всего выбирают в KronosTime</p></div>
+      <div class="sec__tools"><a class="lnk" href="#" data-to="все хиты продаж">Все хиты<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <button class="shelf__btn" type="button" data-shelf="-1" aria-label="Назад"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg></button><button class="shelf__btn" type="button" data-shelf="1" aria-label="Вперёд"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></button></div>
+    </div>
+    <div class="shelf" data-shelfbox><ul class="shelf__list" aria-label="Хиты продаж"><li class="shelf__item rv" style="--d:0ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Tissot PRX Powermatic 80 T137.407.11.351.00"><img src="../assets/pb/80810.jpg" alt="Tissot PRX Powermatic 80 T137.407.11.351.00" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Tissot PRX Powermatic 80 T137.407.11.351.00" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Tissot PRX Powermatic 80 T137.407.11.351.00">Tissot <span>PRX Powermatic 80</span></a>
+  <span class="pc__ref">T137.407.11.351.00</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>103 700 ₽</s><em>−25%</em></span><b>77 600 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Tissot PRX Powermatic 80 T137.407.11.351.00"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:70ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Seiko 5 Sports SRPD63K1"><img src="../assets/pb/72097.jpg" alt="Seiko 5 Sports SRPD63K1" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Seiko 5 Sports SRPD63K1" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Seiko 5 Sports SRPD63K1">Seiko <span>5 Sports</span></a>
+  <span class="pc__ref">SRPD63K1</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>46 900 ₽</s><em>−15%</em></span><b>39 870 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Seiko 5 Sports SRPD63K1"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:140ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Swatch x Omega Bioceramic Moonswatch Mission To The Moon SO33M100"><img src="../assets/pb/105273.jpg" alt="Swatch x Omega Bioceramic Moonswatch Mission To The Moon SO33M100" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Swatch x Omega Bioceramic Moonswatch Mission To The Moon SO33M100" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Swatch x Omega Bioceramic Moonswatch Mission To The Moon SO33M100">Swatch <span>x Omega Bioceramic Moonswatch Mission To The Moon</span></a>
+  <span class="pc__ref">SO33M100</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was" aria-hidden="true"></span><b>77 990 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Swatch x Omega Bioceramic Moonswatch Mission To The Moon SO33M100"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:210ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Orient Mako Kamasu RA-AA0818L (RN-AA0818L)"><img src="../assets/pb/90061.jpg" alt="Orient Mako Kamasu RA-AA0818L (RN-AA0818L)" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Orient Mako Kamasu RA-AA0818L (RN-AA0818L)" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Orient Mako Kamasu RA-AA0818L (RN-AA0818L)">Orient <span>Mako Kamasu</span></a>
+  <span class="pc__ref">RA-AA0818L</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>59 900 ₽</s><em>−48%</em></span><b>31 320 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Orient Mako Kamasu RA-AA0818L (RN-AA0818L)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:280ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Casio G-Shock DW-5600RS-8"><img src="../assets/pb/106276.jpg" alt="Casio G-Shock DW-5600RS-8" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Casio G-Shock DW-5600RS-8" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Casio G-Shock DW-5600RS-8">Casio <span>G-Shock</span></a>
+  <span class="pc__ref">DW-5600RS-8</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>21 990 ₽</s><em>−61%</em></span><b>8 650 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Casio G-Shock DW-5600RS-8"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:280ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Tissot SuperSport Chrono T125.617.33.051.00"><img src="../assets/pb/45920.jpg" alt="Tissot SuperSport Chrono T125.617.33.051.00" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Tissot SuperSport Chrono T125.617.33.051.00" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Tissot SuperSport Chrono T125.617.33.051.00">Tissot <span>SuperSport Chrono</span></a>
+  <span class="pc__ref">T125.617.33.051.00</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>76 500 ₽</s><em>−20%</em></span><b>61 200 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Tissot SuperSport Chrono T125.617.33.051.00"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:280ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Longines HydroConquest L3.781.4.05.6"><img src="../assets/pb/87361.jpg" alt="Longines HydroConquest L3.781.4.05.6" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Longines HydroConquest L3.781.4.05.6" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Longines HydroConquest L3.781.4.05.6">Longines <span>HydroConquest</span></a>
+  <span class="pc__ref">L3.781.4.05.6</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>246 100 ₽</s><em>−15%</em></span><b>210 200 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Longines HydroConquest L3.781.4.05.6"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:280ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Citizen Automatic NJ0170-83X"><img src="../assets/pb/106297.jpg" alt="Citizen Automatic NJ0170-83X" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Citizen Automatic NJ0170-83X" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Citizen Automatic NJ0170-83X">Citizen <span>Automatic</span></a>
+  <span class="pc__ref">NJ0170-83X</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>44 990 ₽</s><em>−40%</em></span><b>26 980 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Citizen Automatic NJ0170-83X"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li><li class="shelf__item rv" style="--d:280ms"><article class="pc pc--shelf">
+  <a class="pc__img" href="#" data-to="карточка Hamilton Khaki Field Auto H70515137"><img src="../assets/pb/38610.jpg" alt="Hamilton Khaki Field Auto H70515137" width="446" height="550" loading="lazy" decoding="async"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Hamilton Khaki Field Auto H70515137" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+  <a class="pc__name" href="#" data-to="карточка Hamilton Khaki Field Auto H70515137">Hamilton <span>Khaki Field Auto</span></a>
+  <span class="pc__ref">H70515137</span>
+  <div class="pc__buy">
+    <div class="pc__price"><span class="pc__was"><s>115 900 ₽</s><em>−24%</em></span><b>88 300 ₽</b></div>
+    <button class="pc__cart" type="button" aria-label="В корзину: Hamilton Khaki Field Auto H70515137"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span>В корзину</span></button>
+  </div>
+</article></li></ul></div>
+  </div>
+</section>
+
+
+<section class="sec new" id="new" aria-labelledby="new-h">
+  <div class="wrap">
+    <div class="sec__head rv"><div><h2 class="h2" id="new-h">Только что в каталоге</h2><p class="lede">Новинки этой недели — от российской классики до цифровых Boccia из титана</p></div>
+      <div class="sec__tools"><a class="lnk" href="#" data-to="новинки">Все новинки<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div></div>
+    <ul class="nt__grid"><li class="rv" style="--d:0ms"><article class="nt">
+  <span class="nt__k">Новинка</span>
+  <a class="nt__name" href="#" data-to="карточка УЧЗ Spectr 1514A4B4">УЧЗ Spectr</a>
+  <span class="nt__ref">1514A4B4</span>
+  <span class="nt__price">8 500 ₽</span>
+  <div class="nt__acts"><a class="nt__more" href="#" data-to="карточка УЧЗ Spectr 1514A4B4">Подробнее</a><button class="nt__cart" type="button" data-cart-btn aria-label="В корзину: УЧЗ Spectr 1514A4B4"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>В корзину</button></div>
+  <a class="nt__img" href="#" data-to="карточка УЧЗ Spectr 1514A4B4" tabindex="-1" aria-hidden="true"><img src="../assets/pb/1819256.jpg" alt="" loading="lazy"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: УЧЗ Spectr 1514A4B4" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+</article></li><li class="rv" style="--d:90ms"><article class="nt">
+  <span class="nt__k">Новинка</span>
+  <a class="nt__name" href="#" data-to="карточка Михаил Москвин Classic 1271L-2">Михаил Москвин Classic</a>
+  <span class="nt__ref">1271L-2</span>
+  <span class="nt__price">9 900 ₽</span>
+  <div class="nt__acts"><a class="nt__more" href="#" data-to="карточка Михаил Москвин Classic 1271L-2">Подробнее</a><button class="nt__cart" type="button" data-cart-btn aria-label="В корзину: Михаил Москвин Classic 1271L-2"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>В корзину</button></div>
+  <a class="nt__img" href="#" data-to="карточка Михаил Москвин Classic 1271L-2" tabindex="-1" aria-hidden="true"><img src="../assets/pb/1819259.jpg" alt="" loading="lazy"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Михаил Москвин Classic 1271L-2" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+</article></li><li class="rv" style="--d:180ms"><article class="nt">
+  <span class="nt__k">Новинка</span>
+  <a class="nt__name" href="#" data-to="карточка U.S. Polo Assn. USPA1142-01">U.S. Polo Assn.</a>
+  <span class="nt__ref">USPA1142-01</span>
+  <span class="nt__price">19 290 ₽</span>
+  <div class="nt__acts"><a class="nt__more" href="#" data-to="карточка U.S. Polo Assn. USPA1142-01">Подробнее</a><button class="nt__cart" type="button" data-cart-btn aria-label="В корзину: U.S. Polo Assn. USPA1142-01"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>В корзину</button></div>
+  <a class="nt__img" href="#" data-to="карточка U.S. Polo Assn. USPA1142-01" tabindex="-1" aria-hidden="true"><img src="../assets/pb/1818901.jpg" alt="" loading="lazy"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: U.S. Polo Assn. USPA1142-01" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+</article></li><li class="rv" style="--d:270ms"><article class="nt">
+  <span class="nt__k">Новинка</span>
+  <a class="nt__name" href="#" data-to="карточка Boccia Digital 3738-01">Boccia Titanium Digital</a>
+  <span class="nt__ref">3738-01</span>
+  <span class="nt__price">11 690 ₽</span>
+  <div class="nt__acts"><a class="nt__more" href="#" data-to="карточка Boccia Digital 3738-01">Подробнее</a><button class="nt__cart" type="button" data-cart-btn aria-label="В корзину: Boccia Digital 3738-01"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>В корзину</button></div>
+  <a class="nt__img" href="#" data-to="карточка Boccia Digital 3738-01" tabindex="-1" aria-hidden="true"><img src="../assets/pb/1818996.jpg" alt="" loading="lazy"></a>
+  <button class="pc__fav" type="button" aria-label="В избранное: Boccia Digital 3738-01" aria-pressed="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-9.2-9.3C1.7 7.5 3.8 4.5 7 4.5c2 0 3.4 1.1 5 2.9 1.6-1.8 3-2.9 5-2.9 3.2 0 5.3 3 4.2 6.2C19.5 15.4 12 20 12 20z"/></svg></button>
+</article></li></ul>
+  </div>
+</section>
+
+<section class="sec stores" id="stores" aria-labelledby="stores-h">
+  <div class="wrap">
+    <ul class="sb">
+      <li class="sb__hero rv"><a class="sh" href="#" data-to="все магазины">
+        <img src="../assets/b/stores_mob.jpg" alt="Магазин KronosTime" loading="lazy">
+        <span class="sh__body"><span class="sh__k">Магазины KronosTime</span><span class="sh__t" id="stores-h">Посмотрите часы вживую</span><span class="sh__s">10 магазинов. Покажем модели, подберём размер браслета и отложим часы к вашему приходу.</span></span>
+      </a></li>
+      <li class="rv" style="--d:80ms"><article class="sc">
+  <span class="sc__open"><i></i>Открыто до 22:00</span>
+  <h3 class="sc__t">Таганский пассаж</h3>
+  <p class="sc__a">ул. Таганская, 3<span>1 этаж, вход со стороны улицы Таганская</span></p>
+  <div class="sc__acts"><a class="sc__btn" href="#" data-to="маршрут до магазина «Таганский пассаж»">Маршрут</a><a class="sc__lnk" href="#" data-to="звонок">+7 (495) 128-09-32</a></div>
+</article></li><li class="rv" style="--d:160ms"><article class="sc">
+  <span class="sc__open"><i></i>Открыто до 21:00</span>
+  <h3 class="sc__t">Дубровская Слобода</h3>
+  <p class="sc__a">1-я улица Машиностроения, 10<span>2 этаж, вход со стороны улицы</span></p>
+  <div class="sc__acts"><a class="sc__btn" href="#" data-to="маршрут до магазина «Дубровская Слобода»">Маршрут</a><a class="sc__lnk" href="#" data-to="звонок">+7 (495) 128-09-32</a></div>
+</article></li>
+      <li class="rv" style="--d:240ms"><a class="sy" href="#" data-to="отзывы на Яндексе"><span class="sy__n">4,9</span><span class="sy__stars" aria-hidden="true">★★★★★</span><span class="sy__s">2000+ отзывов на Яндексе</span><span class="sy__go">Читать отзывы<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a></li>
+      <li class="rv" style="--d:320ms"><a class="sa" href="#" data-to="все магазины"><span class="sa__n">10</span><span class="sa__s">магазинов KronosTime</span><span class="sa__go">Все адреса<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec journal" aria-labelledby="journal-h">
+  <div class="wrap">
+    <div class="sec__head rv"><div><h2 class="h2" id="journal-h">Журнал KronosTime</h2><ul class="jt"><li><a href="#" data-to="журнал: Гиды">Гиды</a></li><li><a href="#" data-to="журнал: Обзоры">Обзоры</a></li><li><a href="#" data-to="журнал: Сравнения">Сравнения</a></li><li><a href="#" data-to="журнал: Уход за часами">Уход за часами</a></li></ul></div>
+      <div class="sec__tools"><a class="lnk" href="#" data-to="журнал">Все статьи<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div></div>
+    <a class="jf rv" href="#" data-to="статья журнала">
+      <span class="jf__img"><img src="../assets/life/02_chasy_0_1.jpg" alt="" loading="lazy"></span>
+      <span class="jf__body"><span class="jc__meta"><b>Гиды</b>30 сентября · 6 минут</span><span class="jf__t">Как выбрать вторые часы в коллекцию: что купить после первой универсальной модели</span><span class="jf__lead">Первая модель обычно универсальная. Разбираем, чем её дополнить: дайвер, классика на ремешке или хронограф.</span><span class="jf__go">Читать<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></span>
+    </a>
+    <ul class="jc__grid"><li class="rv" style="--d:0ms"><a class="jc" href="#" data-to="статья журнала"><span class="jc__img"><img src="../assets/life/03_chasy_3.jpg" alt="" loading="lazy"></span><span class="jc__body"><span class="jc__meta"><b>Гиды</b>29 сентября</span><span class="jc__t">Дата в часах: какую функцию выбрать и за что не стоит переплачивать</span></span></a></li><li class="rv" style="--d:90ms"><a class="jc" href="#" data-to="статья журнала"><span class="jc__img"><img src="../assets/life/14_certina_3.jpg" alt="" loading="lazy"></span><span class="jc__body"><span class="jc__meta"><b>Обзоры</b>21 сентября</span><span class="jc__t">Certina DS Action Diver Powermatic 80: обзор швейцарского дайвера с запасом хода 80 часов</span></span></a></li><li class="rv" style="--d:180ms"><a class="jc" href="#" data-to="статья журнала"><span class="jc__img"><img src="../assets/life/08_chasy_pvd_2.jpg" alt="" loading="lazy"></span><span class="jc__body"><span class="jc__meta"><b>Уход за часами</b>24 сентября</span><span class="jc__t">PVD-покрытие часов: мифы об износе и правила ухода</span></span></a></li></ul>
+  </div>
+</section>
+
+<section class="sun" aria-labelledby="sun-h">
+  <div class="wrap">
+    <div class="sun__stage rv">
+      <svg class="sun__arcs" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true"><path d="M30 500 A470 470 0 0 1 970 500"/><path d="M120 500 A380 380 0 0 1 880 500"/></svg>
+      <ul class="sun__brands" aria-label="Популярные бренды"><li class="sun__b sun__b--o" style="--a:170.0deg"><a href="#" data-to="бренд Tissot"><img src="../assets/logo/tissot.png" alt="Tissot" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:152.2deg"><a href="#" data-to="бренд Longines"><img src="../assets/logo/longines.png" alt="Longines" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:134.4deg"><a href="#" data-to="бренд Rado"><img src="../assets/logo/rado.png" alt="Rado" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:116.7deg"><a href="#" data-to="бренд Oris"><img src="../assets/logo/oris.png" alt="Oris" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:98.9deg"><a href="#" data-to="бренд TAG Heuer"><img src="../assets/logo/tagheuer.png" alt="TAG Heuer" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:81.1deg"><a href="#" data-to="бренд Omega"><img src="../assets/logo/omega.png" alt="Omega" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:63.3deg"><a href="#" data-to="бренд Breitling"><img src="../assets/logo/breitling.png" alt="Breitling" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:45.6deg"><a href="#" data-to="бренд Mido"><img src="../assets/logo/mido.png" alt="Mido" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:27.8deg"><a href="#" data-to="бренд Maurice Lacroix"><img src="../assets/logo/ml.png" alt="Maurice Lacroix" loading="lazy"></a></li><li class="sun__b sun__b--o" style="--a:10.0deg"><a href="#" data-to="бренд Frederique Constant"><img src="../assets/logo/fc.png" alt="Frederique Constant" loading="lazy"></a></li><li class="sun__b sun__b--i" style="--a:168.0deg"><a href="#" data-to="бренд Casio"><img src="../assets/logo/casio.png" alt="Casio" loading="lazy"></a></li><li class="sun__b sun__b--i" style="--a:150.0deg"><a href="#" data-to="бренд Certina"><img src="../assets/logo/certina.png" alt="Certina" loading="lazy"></a></li><li class="sun__b sun__b--i" style="--a:132.0deg"><a href="#" data-to="бренд Hamilton"><img src="../assets/logo/hamilton.png" alt="Hamilton" loading="lazy"></a></li><li class="sun__b sun__b--i" style="--a:48.0deg"><a href="#" data-to="бренд Orient"><img src="../assets/logo/orient.png" alt="Orient" loading="lazy"></a></li><li class="sun__b sun__b--i" style="--a:30.0deg"><a href="#" data-to="бренд Seiko"><span class="sun__word">Seiko</span></a></li><li class="sun__b sun__b--i" style="--a:12.0deg"><a href="#" data-to="бренд Citizen"><span class="sun__word">Citizen</span></a></li></ul>
+      <div class="sun__core">
+        <p class="sun__k">100+ брендов вокруг одного знака</p>
+        <h2 class="sun__h" id="sun-h">Подпишитесь на новости и специальные предложения</h2>
+        <p class="sun__sub">Новинки, акции и подборки часов</p>
+        <form class="sub" novalidate>
+          <div class="sub__row"><label class="sr-only" for="sub-mail">E-mail</label><input id="sub-mail" type="email" placeholder="Введите ваш e-mail" required><button class="btn" type="submit">Подписаться</button></div>
+          <label class="chk"><input type="checkbox" required><span>Соглашаюсь с <a href="#" data-to="обработка персональных данных">обработкой персональных данных</a></span></label>
+          <label class="chk"><input type="checkbox"><span>Соглашаюсь с <a href="#" data-to="рекламная рассылка">рекламной рассылкой</a></span></label>
+        </form>
+      </div>
+      <span class="sun__disc" aria-hidden="true"><img src="../assets/site/mark.svg" alt=""></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap ft__cols">
+    <div class="ft__col"><p class="ft__h">Помощь</p><ul><li><a href="#" data-to="Доставка и оплата">Доставка и оплата</a></li><li><a href="#" data-to="Обмен и возврат">Обмен и возврат</a></li><li><a href="#" data-to="Гарантия">Гарантия</a></li><li><a href="#" data-to="Статус заказа">Статус заказа</a></li><li><a href="#" data-to="Вопросы и ответы">Вопросы и ответы</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Покупателям</p><ul><li><a href="#" data-to="Программа лояльности">Программа лояльности</a></li><li><a href="#" data-to="Нашли дешевле">Нашли дешевле</a></li><li><a href="#" data-to="Рассрочка">Рассрочка</a></li><li><a href="#" data-to="Сервисный центр">Сервисный центр</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Компания</p><ul><li><a href="#" data-to="О компании">О компании</a></li><li><a href="#" data-to="Наши магазины">Наши магазины</a></li><li><a href="#" data-to="Политика">Политика</a></li><li><a href="#" data-to="Вакансии">Вакансии</a></li><li><a href="#" data-to="Франшиза">Франшиза</a></li></ul></div>
+    <div class="ft__col"><p class="ft__h">Свяжитесь с нами</p><ul>
+      <li><a class="ft__tel" href="#" data-to="звонок"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+7 (495) 128-09-32</a></li>
+      <li><a class="ft__tel" href="#" data-to="звонок"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+7 (800) 511-94-55</a></li>
+      <li><a href="#" data-to="контакты">Контакты</a></li><li><a href="#" data-to="обратный звонок">Заказать звонок</a></li></ul></div>
+    <div class="ft__col ft__col--soc">
+      <p class="ft__h">Напишите нам</p><p class="ft__note">Выберите удобный способ связи</p><div class="ft__soc"><a href="#" data-to="MAX" aria-label="MAX"><img src="../assets/site/max.png" alt="" loading="lazy"></a><a href="#" data-to="Telegram" aria-label="Telegram"><img src="../assets/site/telegram.png" alt="" loading="lazy"></a><a href="#" data-to="WhatsApp" aria-label="WhatsApp"><img src="../assets/site/whasapp.png" alt="" loading="lazy"></a></div>
+      <p class="ft__h">Мы в социальных сетях</p><p class="ft__note">Новости, обзоры и подборки часов</p><div class="ft__soc"><a href="#" data-to="ВКонтакте" aria-label="ВКонтакте"><img src="../assets/site/vk.png" alt="" loading="lazy"></a><a href="#" data-to="YouTube" aria-label="YouTube"><img src="../assets/site/youtube.png" alt="" loading="lazy"></a><a href="#" data-to="Дзен" aria-label="Дзен"><img src="../assets/site/dzen.png" alt="" loading="lazy"></a></div>
+    </div>
+  </div>
+  <div class="wrap ft__pay">
+    <span class="ft__pay-h">Мы принимаем к оплате</span><div class="ft__pays"><img src="../assets/site/mir.png" alt="Мир" loading="lazy"><img src="../assets/site/mastercard.png" alt="Mastercard" loading="lazy"><span class="pay-visa" aria-label="Visa">VISA</span><img src="../assets/site/sbp.png" alt="СБП" loading="lazy"><img src="../assets/site/tbank.png" alt="Т-Банк" loading="lazy"><img src="../assets/site/ysplit.png" alt="Сплит" loading="lazy"><img src="../assets/site/dolyame.png" alt="Долями" loading="lazy"></div>
+    <a class="ya ya--ft" href="#" data-to="отзывы на Яндексе"><span class="ya__logo">Я</span><span class="ya__name">Яндекс</span><span>★★★★★ <b>4,9</b></span><small>2000+ отзывов</small></a>
+  </div>
+  <div class="ft__bottom">
+    <div class="wrap ft__bottom-in">
+      <a class="ft__logo" href="#top"><img src="../assets/site/logo.svg" alt="KronosTime" width="185" height="30"><span>Твой стиль. Твоё время</span></a>
+      <div class="ft__legal"><p>© 2008–2026 KronosTime <i>•</i> <a href="#" data-to="пользовательское соглашение">Пользовательское соглашение</a> <i>•</i> <a href="#" data-to="политика конфиденциальности">Политика конфиденциальности</a></p><p>Информация на сайте не является публичной офертой</p></div>
+      <a class="ft__up" href="#top" aria-label="Наверх"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+<div class="cb" role="region" aria-label="Панель концепта">
+  <span class="cb__dot"></span><span class="cb__t">Концепт v4</span>
+  <span class="cb__g" role="group" aria-label="Вариант баннера">Баннер:
+    <button type="button" data-variant="a" aria-pressed="true" title="Широкий, как у Bestwatch">A</button><button type="button" data-variant="b" aria-pressed="false" title="Широкий со списком баннеров">B</button><button type="button" data-variant="c" aria-pressed="false" title="Баннер и хит продаж, как сейчас">C</button></span>
+  <span class="cb__g" role="group" aria-label="Высота баннера">Высота:
+    <button type="button" data-bsize="s" aria-pressed="false" title="Низкий, 3,6 : 1">S</button><button type="button" data-bsize="m" aria-pressed="true" title="Средний, 3,2 : 1">M</button><button type="button" data-bsize="l" aria-pressed="false" title="Высокий, 2,4 : 1 — был раньше">L</button></span>
+  <a class="cb__l" href="stores-history.html" data-real>история магазинов</a>
+  <button class="cb__x" type="button" aria-label="Скрыть панель"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+</div>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

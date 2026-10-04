@@ -1,0 +1,38 @@
+[
+ {
+  "id": "394287",
+  "name": "Longines Conquest 34 mm L3.460.4.18.6",
+  "brand": "Longines",
+  "price": 155800,
+  "old": 185000,
+  "img": "https://media.kronostime.ru/resize_cache/iblock/a2d/0jxyhlooiq8go3tbrsobkb3dmjslqqrj/99999_446_1/L34604186.jpg",
+  "big": "assets/pb/394287.jpg"
+ },
+ {
+  "id": "38454",
+  "name": "Longines Master Collection L2.859.4.92.6",
+  "brand": "Longines",
+  "price": 437900,
+  "old": 451400,
+  "img": "https://media.kronostime.ru/resize_cache/iblock/57e/z6ie9jzh0s00oonjhn4pfh1zs4q201xr/99999_446_1/L2.859.4.92.6.jpg",
+  "big": "assets/pb/38454.jpg"
+ },
+ {
+  "id": "25711",
+  "name": "Longines HydroConquest L3.742.4.96.6",
+  "brand": "Longines",
+  "price": 161100,
+  "old": 195500,
+  "img": "https://media.kronostime.ru/resize_cache/iblock/636/lru8ls6a12k3wiflql1s7gqx8ogddbgd/99999_446_1/L37424966.jpg",
+  "big": "assets/pb/25711.jpg"
+ },
+ {
+  "id": "25715",
+  "name": "Longines La Grande Classique L4.209.4.58.6",
+  "brand": "Longines",
+  "price": 165000,
+  "old": 201500,
+  "img": "https://media.kronostime.ru/resize_cache/iblock/59f/99999_446_1/Longines%20La%20Grande%20Classique%20L4.209.4.58.6.jpg",
+  "big": "assets/pb/25715.jpg"
+ }
+]
