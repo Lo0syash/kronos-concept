@@ -840,3 +840,42 @@ body[data-banner="c"] .bs__s { font-size: 14px; }
 .shelf__item { width: auto; }
 @media (max-width: 1100px) { .shelf__list { grid-auto-columns: calc((100% - 40px) / 3); } }
 @media (max-width: 767px) { .shelf__list { grid-auto-columns: calc((100% - 14px) / 2); } }
+
+/* ---------- Телефон: ничего не должно выходить за ширину экрана ---------- */
+html, body { overflow-x: clip; }
+@media (max-width: 767px) {
+  .ha__t { display: none; }
+  /* Факты — сеткой в две колонки, без горизонтальной прокрутки */
+  .facts__list { grid-template-columns: 1fr 1fr; grid-auto-flow: row; grid-auto-columns: auto; gap: 18px 16px; overflow: visible; margin: 0 auto; padding: 0 var(--gut); }
+  .facts__list li:last-child { grid-column: 1 / -1; }
+  /* Панель концепта: одна аккуратная строка внутри экрана */
+  .cb { left: 8px; right: 8px; gap: 8px; padding: 6px 6px 6px 10px; flex-wrap: nowrap; overflow: hidden; }
+  .cb__dot, .cb__t { display: none; }
+  .cb__g { font-size: 11px; gap: 3px; }
+  .cb__g + .cb__g { padding-left: 8px; margin-left: 0; }
+  .cb__g button { width: 26px; height: 24px; }
+  /* На тач-экранах карточки не «залипают» в поднятом состоянии после касания */
+  .pc--shelf:hover, .nt:hover, .jf:hover, .jc:hover, .sh:hover, .sc:hover, .sy:hover, .sa:hover { transform: none; }
+  .nt:hover .nt__img img { transform: translateY(14%); }
+}
+@media (hover: none) {
+  .pc--shelf:hover, .nt:hover, .jf:hover, .jc:hover, .sh:hover, .sc:hover, .sy:hover, .sa:hover { transform: none; box-shadow: var(--sh-1); }
+}
+@media (max-width: 767px) {
+  /* Новинки: плитка ниже, часы ближе к тексту */
+  .nt { padding: 22px 18px 0; }
+  .nt__img { height: 200px; padding-top: 12px; }
+  .nt__img img { transform: translateY(10%); }
+  .nt__acts { gap: 12px; margin-top: 12px; }
+  .nt__cart { height: 36px; padding: 0 14px; }
+  /* Бренды: на телефоне вместо дуги — аккуратная сетка логотипов над формой */
+  .sun__stage { padding-top: 0; aspect-ratio: auto; container-type: normal; }
+  .sun__arcs, .sun__disc, .sun__stage::after { display: none; }
+  .sun__brands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .sun__b, .sun__b:nth-child(n) { position: static; display: block; transform: none; }
+  .sun__b a { height: 56px; min-width: 0; border-radius: 12px; background: #fff; box-shadow: var(--sh-1); }
+  .sun__b img { max-width: 72%; max-height: 22px; }
+  .sun__word { font-size: 11px; }
+  .sun__core { margin-top: 28px; }
+}
+@media (max-width: 767px) { .sun__b:last-child { display: none; } .sun { margin-top: 48px; } }
