@@ -903,3 +903,58 @@ html, body { overflow-x: clip; }
 @keyframes sunmarq { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .sun__track { animation: none; } }
 @media (max-width: 767px) { .nt__img img, .nt:hover .nt__img img { filter: brightness(1.06); } }
+
+/* ---------- Бренды: лента как на странице магазина kronostime.ru ---------- */
+.sun { margin-top: 72px; padding: 56px 0 64px; background: var(--soft); }
+.br { display: flex; align-items: center; gap: 40px; }
+.br__count { flex: none; }
+.br__count b { display: block; font: 600 clamp(40px, 4vw, 56px)/1 var(--font); letter-spacing: -.02em; color: var(--red); }
+.br__count span { display: block; margin-top: 8px; font: 600 11px/1.6 var(--font); letter-spacing: .15em; text-transform: uppercase; color: #333; }
+.br__slider { flex: 1 1 auto; min-width: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%); }
+.br__track { display: flex; align-items: center; width: max-content; animation: brmarq 45s linear infinite; }
+.br__slider:hover .br__track { animation-play-state: paused; }
+.br__track li { flex: none; width: 170px; padding: 0 14px; }
+.br__track a { display: flex; align-items: center; justify-content: center; height: 72px; transition: opacity .2s; }
+.br__track a:hover { opacity: .6; }
+.br__track img { max-width: 100%; max-height: 44px; width: auto; height: auto; object-fit: contain; mix-blend-mode: multiply; }
+@keyframes brmarq { to { transform: translateX(-50%); } }
+.br__more { flex: none; display: inline-flex; align-items: center; gap: 12px; font: 600 11px/1.6 var(--font); letter-spacing: .15em; text-transform: uppercase; color: var(--mauve); }
+.br__more .i { width: 18px; height: 18px; transition: transform .2s; }
+.br__more:hover { color: var(--red); }
+.br__more:hover .i { transform: translateX(3px); }
+/* Подписка — одной строкой под лентой */
+.sb2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 24px 56px; align-items: center; margin-top: 48px; padding: 32px 40px; border-radius: 18px; background: #fff; box-shadow: var(--sh-1); }
+.sb2__h { margin: 0; font: 600 22px/1.25 var(--font); }
+.sb2__text p { margin: 6px 0 0; color: var(--text); font-size: 14px; }
+.sb2 .sub { margin: 0; }
+.sb2 .sub__row { max-width: none; }
+.sb2 .chk { justify-content: flex-start; }
+@media (max-width: 1100px) { .sb2 { grid-template-columns: 1fr; } }
+@media (max-width: 767px) {
+  .sun { margin-top: 56px; padding: 36px 0 40px; }
+  .br { flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+  .br__slider { order: 3; flex-basis: 100%; margin: 0 calc(var(--gut) * -1); }
+  .br__count b { font-size: 40px; }
+  .br__track { animation-duration: 35s; }
+  .br__track li { width: 118px; padding: 0 10px; }
+  .br__track a { height: 56px; }
+  .br__track img { max-height: 32px; }
+  .sb2 { margin-top: 28px; padding: 22px 18px; border-radius: 16px; }
+  .sb2__h { font-size: 18px; }
+  .sb2 .sub__row { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { .br__track { animation: none; } .br__slider { overflow-x: auto; } }
+
+/* ---------- Ленты на телефоне: только горизонтально ---------- */
+.shelf, .nt__grid, .jc__grid { overflow: auto hidden; overscroll-behavior: contain; }
+@media (max-width: 767px) {
+  /* Заголовки разделов: название и ссылка в одну строку, без подзаголовка */
+  .sec__head { flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .sec__head .lede, .sec__head .jt { display: none; }
+  .sec__head .h2 { font-size: 22px; }
+  .sec__tools .lnk { margin-right: 0; font-size: 13px; }
+  /* Новинки: картинка абсолютным слоем — надёжно для Safari */
+  .nt__img { position: relative; display: block; height: 210px; margin-top: auto; padding: 0; }
+  .nt__img img { position: absolute; left: 8%; right: 8%; top: 12px; bottom: 14px; width: 84%; height: calc(100% - 26px); max-width: none; object-fit: contain; object-position: center bottom; }
+}
+@media (max-width: 767px) { .nt__img img, .nt:hover .nt__img img { filter: none; } .shelf .pc__img img { mix-blend-mode: normal; filter: none; } }
