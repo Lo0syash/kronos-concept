@@ -879,3 +879,27 @@ html, body { overflow-x: clip; }
   .sun__core { margin-top: 28px; }
 }
 @media (max-width: 767px) { .sun__b:last-child { display: none; } .sun { margin-top: 48px; } }
+
+/* ---------- Телефон: ленты листаются только вбок, не «плывут» вверх-вниз ---------- */
+.shelf, .nt__grid, .jc__grid, .cs__grid, .cxs__list { overflow-y: hidden; overscroll-behavior-x: contain; }
+.sun__marq { display: none; }
+@media (max-width: 767px) {
+  .shelf, .nt__grid, .jc__grid, .cxs__list { touch-action: pan-x pan-y; -webkit-overflow-scrolling: touch; }
+  /* внутри лент без «всплывания» — оно сдвигало карточки по вертикали */
+  .shelf .rv, .nt__grid .rv, .jc__grid .rv { opacity: 1; transform: none; transition: none; }
+  /* Новинки: белая плитка, фото без режима наложения (Safari на iPhone его не рисует внутри прокрутки) */
+  .nt { background: #fff; box-shadow: var(--sh-1); }
+  .nt__img img, .nt:hover .nt__img img { mix-blend-mode: normal; filter: none; transform: none; }
+  .nt__img { height: 210px; padding-bottom: 14px; }
+  /* Бренды: одна бегущая строка логотипов вместо сетки */
+  .sun { padding-top: 32px; }
+  .sun__brands { display: none; }
+  .sun__marq { display: block; overflow: hidden; margin: 0 calc(var(--gut) * -1); -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+  .sun__track { display: flex; align-items: center; gap: 36px; width: max-content; padding: 6px 0; animation: sunmarq 38s linear infinite; }
+  .sun__track img { height: 20px; width: auto; filter: grayscale(1); opacity: .8; }
+  .sun__track .sun__word { font-size: 12px; letter-spacing: .2em; white-space: nowrap; }
+  .sun__core { margin-top: 24px; }
+}
+@keyframes sunmarq { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .sun__track { animation: none; } }
+@media (max-width: 767px) { .nt__img img, .nt:hover .nt__img img { filter: brightness(1.06); } }
